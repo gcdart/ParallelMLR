@@ -58,7 +58,7 @@ Here are some parameters to tweak for good performance and convergence,
 
 1. Regularization parameter : gc.iterativemlr-train.lambda
 2. Total number of iterations to run : iterativemlr-train.iterations
-3. The accuracy of inner lbfgs optimization. A heuristic has been implemented in lines 194 to 196.
+3. The accuracy of inner lbfgs optimization. A heuristic has been implemented in lines 194 to 196 of TrainingDriver.java.
     This is by no means a 'recommended' strategy. Please consider rewriting your own for your dataset.
 
 ## Testing a classifier
