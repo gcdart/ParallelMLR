@@ -20,7 +20,7 @@ package org.pMLR.ML;
 
 /**
  *  The following is a modified version of the JAVA translation of the LBFGS optimization Line search routine written by Robert Dodier.
- *  I've fixed a few bugs and adapted the source code to fit the rest of the software. 
+ *  I've fixed a few bugs and adapted the source code to fit the rest of the software  - Siddharth
  */
 
 /** This class implements an algorithm for multi-dimensional line search.
