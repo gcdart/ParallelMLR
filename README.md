@@ -11,7 +11,7 @@ made to the Distributed Cache section of the code.
 1. LBFGS.java and Msrch.java are the implementation
    of Limited Memory BFGS and associated line search by robert_dodier@yahoo.com	
    
-# PACKAGE DESCRIPTION
+## PACKAGE DESCRIPTION
 
 
 1. This tool train a regularized Multiclass Logistic Regression for large number of classes.
@@ -55,9 +55,10 @@ hadoop jar pmlr.jar org.pMLR.hadoop.TrainingDriver
 ### Things to tweak
 
 Here are some parameters to tweak for good performance and convergence,
-(1) Regularization parameter : gc.iterativemlr-train.lambda
-(2) Total number of iterations to run : iterativemlr-train.iterations
-(3) The accuracy of inner lbfgs optimization. A heuristic has been implemented in lines 194 to 196.
+
+1. Regularization parameter : gc.iterativemlr-train.lambda
+2. Total number of iterations to run : iterativemlr-train.iterations
+3. The accuracy of inner lbfgs optimization. A heuristic has been implemented in lines 194 to 196.
     This is by no means a 'recommended' strategy. Please consider rewriting your own for your dataset.
 
 ## Testing a classifier
