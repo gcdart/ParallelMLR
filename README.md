@@ -5,8 +5,8 @@ dataset or parameters dont read into memory, there is some modification to be
 made to the Distributed Cache section of the code.
 [emailing me is a better option]
 
-ACKNOWLEDGEMENTS
-================
+## ACKNOWLEDGEMENTS
+
 
 1. LBFGS.java and Msrch.java are the implementation
    of Limited Memory BFGS and associated line search by robert_dodier@yahoo.com	
@@ -20,7 +20,7 @@ ACKNOWLEDGEMENTS
     [ I plan to do extend this code to datasets which cannot be fit in memory
        in the near future, but no ideas as of yet. ]
 
-# Dataset Format
+## Dataset Format
 
 Please use the Converter tool associated with the MulticlassClassifier package
 to convert your dataset to the appropriate binary format.
@@ -30,9 +30,9 @@ Refer : gcdart.blogspot.com/2012/08/multiclass-classifer-with-hadoop.html
 for more information.
 
 
-# Training a Regularized Multiclass Logistic Regression Classifier
+## Training a Regularized Multiclass Logistic Regression Classifier
 
-
+```
 hadoop jar pmlr.jar org.pMLR.hadoop.TrainingDriver 
        -D gc.iterativemlr-train.startiter=0 
        -D gc.iterativemlr-train.lambda=.001 [reg-parameter-value]
@@ -50,8 +50,9 @@ hadoop jar pmlr.jar org.pMLR.hadoop.TrainingDriver
        -D gc.iterativemlr-train.output=/params/dataset/itermlr/weights/
        -D gc.iterativemlr-train-vparam.output=/params/dataset/itermlr/vparams/
        -D gc.iterativemlr-train-fvalues.dir=/params/dataset/itermlr/fvalues/
+```
 
-## Things to tweak
+### Things to tweak
 
 Here are some parameters to tweak for good performance and convergence,
 (1) Regularization parameter : gc.iterativemlr-train.lambda
@@ -59,7 +60,7 @@ Here are some parameters to tweak for good performance and convergence,
 (3) The accuracy of inner lbfgs optimization. A heuristic has been implemented in lines 194 to 196.
     This is by no means a 'recommended' strategy. Please consider rewriting your own for your dataset.
 
-# Testing a classifier
+## Testing a classifier
 
 
 Please use the Testing tool associated with the MulticlassClassifier package
